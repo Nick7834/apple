@@ -88,4 +88,23 @@ basketMain.addEventListener('click', e => {
     if(e.target.classList.contains('basket__del')) {
         delP(e.target.closest('.basket__cart'));
     }
-})
+});
+
+// add cart
+
+const showClick = document.querySelector('.button');
+const carts = document.querySelectorAll('.card').length;
+let views = 6;
+
+showClick.addEventListener('click', () => {
+    views += 3;
+
+    const array = Array.from(document.querySelector('.cards').children);
+    const view =  array.slice(0, views);
+
+    view.forEach(el => el.classList.add('adds'));
+
+    if (view.length === carts) {
+        showClick.style.display = 'none';
+    }
+});
