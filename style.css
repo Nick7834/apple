@@ -294,4 +294,27 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .card__button:hover {
   background: #eb7b88;
+}
+
+.card:nth-child(n+7) {
+  display: none;
+}
+
+.card.adds {
+  display: block;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid rgb(93, 93, 229);
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgb(93, 93, 229);
 }/*# sourceMappingURL=style.css.map */
